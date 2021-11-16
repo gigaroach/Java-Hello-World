@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+class MyProgram {
+   public static void main(String[] args) {
+       Scanner scan = new Scanner(System.in);
+       String smallstring = scan.nextLine();
+       scan.close();
+       System.out.println(smallstring.toLowerCase() + "\n" + smallstring.toUpperCase());
+   }
+}
