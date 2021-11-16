@@ -1,0 +1,26 @@
+/*Реализуйте простые домашние часы.
+
+На вход подаётся число секунд, которое прошло с момента начала суток (00:00:00). Выведите текущее время в формате ЧЧ:ММ:СС.
+
+Примечание 1. Используйте 24-часовой формат.
+
+Примечание 2. Для преобразования типа int в тип String (если это понадобится) можно использовать встроенный служебный метод String.valueOf(num), 
+который преобразует число num в строку "num".
+*/
+
+class Main {
+    public static void main(String[] args) {
+        int maxsecnds = 24 * 60 * 60;  //86400
+        int secndsinhour = 60 * 60;  //3600
+        int secndsinmin = 60;
+        int thatnumber = 86401;  //put an any value
+        thatnumber %= maxsecnds;
+        int hrs = thatnumber / secndsinhour;
+        int min = (thatnumber % secndsinhour) / secndsinmin;
+        int sec = (thatnumber % secndsinhour) % secndsinmin;
+        String hourstring = String.valueOf((int) hrs / 10) + String.valueOf(hrs % 10);
+        String minstring = String.valueOf((int) min / 10) + String.valueOf(min % 10);
+        String secstring = String.valueOf((int) sec / 10) + String.valueOf(sec % 10);
+        System.out.println(hourstring + ":" + minstring + ":" + secstring);
+    }
+}
