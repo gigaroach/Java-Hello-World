@@ -1,0 +1,17 @@
+/*ООО "Круче Гугла" нанимает Java-разработчиков. Месячный бюджет на зарплату разработчиков - X, зарплата одного разработчика - Y. 
+Выведите на печать в одной строке через пробел, какое максимальное количество разработчиков компания сможет нанять, 
+и какое количество денег из ежемесячного бюджета останется неиспользованным.*/
+
+import java.util.Scanner;
+
+class MyNumber {
+   public static void main(String[] args) {
+       Scanner scan = new Scanner(System.in);
+       double cost = scan.nextDouble();
+       double rate = scan.nextDouble();
+       scan.close();
+       int devs = (int) cost / (int) rate;
+       int resid = (int) cost % (int) rate;
+       System.out.println(devs + " " + resid);
+   }
+}
