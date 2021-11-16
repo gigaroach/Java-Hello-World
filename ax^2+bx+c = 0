@@ -1,0 +1,40 @@
+/*
+
+
+Напишите программу, находящую корни квадратного уравнения  ax^2+bx+c = 0
+
+На вход подаются целые числа a, b и c. Выведите сумму и произведение корней в одной строке, через пробел.
+
+Примечание 1. Гарантируется, что существует два различных корня.
+
+Примечание 2. Можно воспользоваться, к примеру, теоремой Виета.
+
+Sample Input:
+
+1 2 -4
+
+Sample Output:
+
+-2.0 -4.0
+
+
+*/
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        int c = scan.nextInt();
+        scan.close();    
+        double prod;
+        double sum;
+        //x1 + x2 = -b/a
+        //x1 * x2 = c/a
+        sum = (-1 * b) / a;
+        prod = c / a;
+        System.out.println(sum + " " + prod);
+    }
+}
