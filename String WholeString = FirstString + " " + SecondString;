@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+class MyProgram {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String FirstString = scan.nextLine();
+        String SecondString = scan.nextLine();
+        scan.close();
+        String WholeString = FirstString + " " + SecondString;
+        System.out.println(WholeString + "\n" + WholeString.length());    
+    }
+}
