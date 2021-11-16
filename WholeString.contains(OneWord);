@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String WholeString = scan.nextLine();
+        String OneWord = scan.nextLine();
+        boolean ThatsWord = WholeString.contains(OneWord);
+        scan.close();
+        System.out.println(ThatsWord);
+    }
+}
