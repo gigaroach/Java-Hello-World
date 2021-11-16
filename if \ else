@@ -1,0 +1,22 @@
+/* Два индийских программиста, Махатма и Джавахарлал,
+решили выяснить, кто из них быстрее пишет код. Напишите программу, которая поможет им выяснить это.
+
+На вход подаются два целых числа в одной строке через пробел. Если первое число больше второго, 
+необходимо вывести на печать "Махатма", если второе - "Джавахарлал". Гарантируется, что числа больше нуля и различны. */
+
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int Mahatma = scan.nextInt();
+        int Jawaharlal = scan.nextInt();
+        scan.close();
+        if (Mahatma > Jawaharlal) {
+            System.out.println("Махатма");
+        } else {
+            System.out.println("Джавахарлал");
+        }
+    }
+}
