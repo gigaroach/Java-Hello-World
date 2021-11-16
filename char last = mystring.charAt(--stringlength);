@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    String mystring = scan.nextLine();
+    int stringlength = mystring.length();
+    char first = mystring.charAt(0);
+    char last = mystring.charAt(--stringlength);    
+    scan.close();
+    System.out.println(first + " " + last);
+    }
+}
+
