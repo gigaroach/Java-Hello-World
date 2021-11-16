@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String ThatString = scan.nextLine();
+        int i = scan.nextInt();
+        scan.close();
+        char Letter = ThatString.charAt(--i);
+        System.out.println(Letter);
+    }
+}
