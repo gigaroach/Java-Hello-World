@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+class MyProg {
+	public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+		    String CorrectPass = scan.nextLine();
+        String usersPass = scan.nextLine();
+        scan.close();
+        if (usersPass.equals(CorrectPass)) {
+            System.out.println("Access is granted");
+        } else {
+            System.out.println("Access is denied");
+        }
+	}
+}
