@@ -1,0 +1,13 @@
+/* На вход подаётся целое число. 
+Выведите "YES", если оно нацело делится на 7, но не делится на 5, и "NO" - в обратном случае. */
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        scan.close();
+        System.out.println((num % 7 == 0) && (num % 5 != 0) ? "YES" : "NO");
+    }
+}
