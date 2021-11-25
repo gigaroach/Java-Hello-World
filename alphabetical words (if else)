@@ -1,0 +1,32 @@
+/*На вход подаются три слова на одной строке, разделённые пробелом. Выведите их в алфавитном порядке. Гарантируется, что слова начинаются с разных букв.
+
+Решение через if else. */
+
+
+
+import java.util.Scanner;
+
+class MyProgram {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String string1 = scan.next();
+        String string2 = scan.next();
+        String string3 = scan.next();
+        scan.close();
+        char letter1 = string1.charAt(0);
+        char letter2 = string2.charAt(0);
+        char letter3 = string3.charAt(0);
+        if (letter1 < letter2 && letter1 < letter3) {
+            System.out.println(string1);
+            System.out.println(letter2 < letter3 ? string2 + "\n" + string3 : string3 + "\n" + string2);
+        } else {
+            if (letter2 < letter1 && letter2 < letter3) {
+                System.out.println(string2);
+                System.out.println(letter1 < letter3 ? string1 + "\n" + string3 : string3 + "\n" + string1);
+                } else {
+                    System.out.println(string3);
+                    System.out.println(letter1 < letter2 ? string1 + "\n" + string2 : string2 + "\n" + string1);
+            }
+        }
+    }
+}
