@@ -1,0 +1,27 @@
+/* Считайте со ввода последовательность целых чисел. 
+Последовательность оканчивается числом 0.
+
+Выведите на печать сумму введённых чисел.
+
+Sample Input:
+
+1 2 3 4 5 0
+Sample Output:
+
+15 */
+
+import java.util.Scanner;
+
+class MyNumber {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        int sum = 0;
+        while (num != 0) {
+            sum += num;
+            num = scan.nextInt();
+        }
+        scan.close();
+        System.out.println(sum);
+    }
+}
