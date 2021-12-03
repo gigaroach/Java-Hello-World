@@ -1,0 +1,19 @@
+
+/*На вход подаётся два натуральных числа x и y. Выведите на печать прямоугольник из звёздочек размером x*y. */
+
+import java.util.Scanner;
+
+class Example {
+	public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int x = scan.nextInt();
+        int y = scan.nextInt();
+        scan.close();
+        for (int ix = 1; ix <= x; ix++) {
+            for (int iy = 1 ; iy <= y; iy++) {
+               System.out.print("*"); 
+            }
+            System.out.print("\n");
+        }
+    }
+}
