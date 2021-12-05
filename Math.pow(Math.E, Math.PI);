@@ -1,0 +1,20 @@
+/* Класс Math содержит значения математических констант:
+
+static double Math.E    // 2.7182818284...
+
+static double Math.PI   // 3.1415926535...
+
+Что больше, e^π или π^e
+
+В ответе выведите соответствующий знак (<, > или =). */
+
+class MyProgram {
+    public static void main(String[] args) {
+        double EtoPI = Math.pow(Math.E, Math.PI);
+        double PItoE = Math.pow(Math.PI, Math.E);
+        if (PItoE == EtoPI) System.out.println("=");
+        else {
+            System.out.println(EtoPI > PItoE ? ">" : "<");
+        }
+    }
+}
