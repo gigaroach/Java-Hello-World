@@ -1,0 +1,32 @@
+/* Дан угол x градусов. Выведите значение угла в радианах.
+
+Sample Input 1:
+
+90
+Sample Output 1:
+
+1.5707963267948966   */
+
+import java.util.Scanner;
+
+class MyClass {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        double angle = scan.nextDouble();
+        scan.close();
+        System.out.println(Math.toRadians(angle));
+    }
+}
+
+/*  из радиан в градусы
+
+import java.util.Scanner;
+
+class MyClass {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        double angle = scan.nextDouble();
+        scan.close();
+        System.out.println(Math.toDegrees(angle));
+    }
+}    */
