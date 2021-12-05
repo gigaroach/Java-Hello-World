@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+class MyProgram {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        scan.close();
+        double PI = Math.PI;
+        if (n == 0) System.out.println(3);
+        else {
+            int scale = (int)Math.pow(10, n);
+            System.out.println((double)Math.round(PI * scale) / scale);
+        }
+    }
+}
