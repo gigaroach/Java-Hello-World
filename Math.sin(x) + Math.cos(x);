@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+class MyProgram {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int angle = scan.nextInt();
+        scan.close();
+        double x = Math.toRadians(angle);
+        double y = Math.sin(x) + Math.cos(x);
+        System.out.println(y);
+    }
+}
