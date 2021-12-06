@@ -1,0 +1,24 @@
+/* На вход подаются длины двух катетов прямоугольного треугольника a и b. 
+Посчитайте и выведите на печать периметр этого треугольника. 
+Значение периметра необходимо округлить до целого (в математическом смысле, не типа int).
+
+Sample Input:
+
+3 4
+Sample Output:
+
+12.0   */
+
+import java.util.Scanner;
+
+class MyProgram {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        double a = scan.nextDouble();
+        double b = scan.nextDouble();
+        scan.close();
+        double c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+        double perimeter = a + b + c;
+        System.out.println((double)Math.round(perimeter));
+    }
+}
