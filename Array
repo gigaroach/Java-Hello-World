@@ -1,0 +1,26 @@
+/* На вход подаётся натуральное число n. 
+Создайте массив натуральных чисел от единицы до n включительно и выведите его на печать (в одной строке, через пробел).
+
+Sample Input:
+
+5
+Sample Output:
+
+1 2 3 4 5   */
+
+import java.util.Scanner;
+
+class MyNumber {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        int[] theArray = new int[num];
+        scan.close();
+        for (int i = num; i > 0; i--) {
+            theArray[i - 1] = i;
+        }
+        for (int i = 0; i < num; i++) {
+            System.out.print(theArray[i] + " ");
+        }
+    }
+}
