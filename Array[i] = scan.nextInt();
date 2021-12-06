@@ -1,0 +1,26 @@
+/* На вход подаётся натуральное число n > 0 (длина массива), 
+а на следующей строке - последовательность целых чисел. 
+Создайте из неё массив и выведите на печать значение последнего элемента массива.
+
+Sample Input:
+
+5
+1 2 3 4 5
+Sample Output:
+
+5   */
+
+import java.util.Scanner;
+
+class MyNumber {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int arLength = scan.nextInt();
+        int[] Array = new int[arLength];
+        for (int i = 0; i < arLength; i++) {
+            Array[i] = scan.nextInt();
+        }
+        scan.close();
+        System.out.println(Array[arLength - 1]);
+    }
+}
