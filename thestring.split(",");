@@ -1,0 +1,21 @@
+/* На вход подаётся строка из элементов, разделённых запятой. 
+Создайте из неё массив и выведите элементы массива каждый в отдельной строке.
+
+Sample Input:
+
+1,2,3,4,5   */
+
+
+import java.util.Scanner;
+
+class MyClass {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String thestring = scan.nextLine();
+        scan.close();
+        String[] numbers = thestring.split(",");
+        for (String numb: numbers) {
+            System.out.println(numb);
+        }
+    }
+}
