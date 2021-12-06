@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+class MyClass {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        int[] theArray = new int[num];
+        int ID;
+        for (int i = 0; i < num; i++) {
+            theArray[i] = scan.nextInt();
+        }
+        ID = scan.nextInt();
+        scan.close();
+        System.out.println(theArray[ID]);
+    }
+}
